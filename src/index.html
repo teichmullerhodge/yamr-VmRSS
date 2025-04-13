@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  </head>
+
+  <body>
+    <main class="application">
+      <div class="header">
+        <div class="entry">
+          <input type="text" placeholder="PID or process name" class="entry-input" id="pid-input">
+            <i class="fi fi-rs-search" id="search-btn"></i>
+        </div>
+      </div>
+      <div class="mem-section">
+        <h4 class="title">Memory Usage</h4>
+        <div class="chart-section">
+          <canvas id="mchart"></canvas>
+        </div>
+      </div>
+
+      <div class="config-section">
+        <h4 class="title"></h4>
+      
+        <div class="config-space">
+          <label>Line/Bar Type:</label>
+          <select id="chart-type">
+            <option value="line">Line</option>
+            <option value="bar">Bar</option>
+          </select>
+        </div>
+        
+        <div class="config-space">
+          <label>Border color:</label>
+          <input type="color" id="border-color" value="#e95420">
+        </div>
+        <div class="config-space">
+          <label>Background color:</label>
+          <input type="color" id="back-color" value="#f1eeee">
+        </div>
+
+        <div class="config-space">
+          <label>Line Tension (0 to 1):</label>
+          <input type="number" id="tension-input" value="0.5" min="0" max="1" step="0.1">
+        </div>
+        <div class="config-space">
+          <label>Interval (ms):</label>
+          <input type="number" id="interval-speed" value="1000" min="100" step="100">
+        </div>
+        <div class="config-space">
+          <label>Save configurations:</label>
+          <button id="apply-config">Save <i class="fi fi-rs-disk"></i></button>
+        </div>
+  
+      </div>    
+    </main>
+  
+    <script>
+     
+  </script>
+
+  
+  
+  </body>
+
+  
+
+</html>
