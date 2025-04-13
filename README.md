@@ -5,3 +5,7 @@ of an application in real time. Just pass the PID or the process name and you're
 
 ![Alt Text](assets/yamr.png)
 
+
+YAMR being used to analyse itself: ![Alt Text](assets/itself.png)
+
+
